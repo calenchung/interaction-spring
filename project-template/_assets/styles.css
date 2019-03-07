@@ -1,3 +1,11 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
 Body {
   background: red;
 }
@@ -5,8 +13,18 @@ Body {
 
 p {
   color: white;
-  font-family: titling-gothic-fb-wide;
+  font-family: filson-pro;
+  font-weight: 400;
+  font-size: ;
+  line-height: 25px;
+  margin-top: 30px;
+  position: relative;
+}
+
+#fun{
+  color: white;
+  margin-top: 50px;
+  font-size: 100px;
   font-weight: 700;
-  font-size: 150px;
-  line-height: 130px;
+
 }

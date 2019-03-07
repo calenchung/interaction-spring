@@ -1,0 +1,126 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+}
+
+button {
+  font-family: ibm-plex-mono;
+  font-size: 3rem;
+  margin-left: 1rem;
+  top: 0;\
+}
+
+
+.timestamp {
+	font-family: ibm-plex-mono, sans-serif;
+	font-weight: lighter;
+	font-style: normal;
+  font-size: 2rem;
+	position: sticky;
+	position: -webkit-sticky;
+    position: absolute;
+    top: 10px;
+  margin-left: 80%;
+}
+
+
+#sliders {
+	font-family: ibm-plex-mono, sans-serif;
+	font-weight: lighter;
+	font-style: normal;
+  font-size: 1.5rem;
+	position: sticky;
+	position: -webkit-sticky;
+    position: relative;
+    top: 5vw;
+  margin-left: 80%;
+}
+
+#red::-webkit-slider-thumb, #green::-webkit-slider-thumb, #blue::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: white;
+  border: solid 1.5px black;
+  cursor: pointer;
+}
+
+
+#red{
+  -webkit-appearance: none;
+  height: 6px;
+  background: red;
+  outline: none;
+}
+
+#green{
+  -webkit-appearance: none;
+  height: 6px;
+  outline: none;
+}
+
+#blue{
+  -webkit-appearance: none;
+  height: 6px;
+  outline: none;
+}
+
+
+h1{
+  font-family: ibm-plex-mono;
+  font-size: 3rem;
+  margin-left: 1rem;
+  top: 0;
+}
+
+a {
+  top: 17rem;
+  position: absolute;
+  font-family: ibm-plex-sans;
+  color: black;
+  font-size: 1.5rem;
+  border: 2px solid black;
+  text-decoration: none;
+  padding: 4vw;
+  margin-left: 2rem;
+
+}
+
+#pa {
+  top: 12rem;
+  margin-left: 5vw;
+}
+
+#pc {
+  top: 20rem;
+  margin-left: 10vw;
+}
+
+#p1 {
+  top: 5rem;
+  margin-left: 30vw;
+}
+
+#p2 {
+  position: absolute;
+  top: 20vw;
+  margin-left: 50vw;
+}
+
+#p3 {
+  position: absolute;
+  top: 30rem;
+  margin-left: 70vw;
+
+}
+
+#p4 {
+  position: absolute;
+  top: 35rem;
+  margin-left: 25vw;
+}

@@ -5,39 +5,49 @@
 }
 
 body {
+  font-family: FavoritTrial, 'Roboto', sans-serif;
 }
 
+@font-face {
+font-family: "FavoritTrial";
+src: url("../fonts/FavoritTrial-Regular.woff");
+}
+
+
 button {
-  font-family: ibm-plex-mono;
   font-size: 3rem;
   margin-left: 1rem;
-  top: 0;\
+  top: 0;
 }
 
 
 .timestamp {
-	font-family: ibm-plex-mono, sans-serif;
+  font-family: FavoritTrial, 'Roboto', sans-serif;
 	font-weight: lighter;
 	font-style: normal;
   font-size: 2rem;
 	position: sticky;
 	position: -webkit-sticky;
-    position: absolute;
-    top: 10px;
-  margin-left: 80%;
+  position: absolute;
+  margin: 5rem;
+  width: 5rem;
+  right: 0;
+  top: .5rem;
 }
 
 
 #sliders {
-	font-family: ibm-plex-mono, sans-serif;
+  font-family: FavoritTrial;
 	font-weight: lighter;
 	font-style: normal;
   font-size: 1.5rem;
 	position: sticky;
 	position: -webkit-sticky;
-    position: relative;
-    top: 5vw;
-  margin-left: 80%;
+  position: absolute;
+  width: 5rem;
+  top: 11.5rem;
+  right: 0;
+  margin: 5rem;
 }
 
 #red::-webkit-slider-thumb, #green::-webkit-slider-thumb, #blue::-webkit-slider-thumb {
@@ -72,55 +82,50 @@ button {
 
 
 h1{
-  font-family: ibm-plex-mono;
-  font-size: 3rem;
-  margin-left: 1rem;
+  font-family: FavoritTrial, 'Roboto', sans-serif;
+  font-size: 5rem;
+  margin: 5rem;
   top: 0;
+  white-space: nowrap;
 }
 
 a {
-  top: 17rem;
-  position: absolute;
-  font-family: ibm-plex-sans;
-  color: black;
-  font-size: 1.5rem;
-  border: 2px solid black;
+  font-size: 3rem;
+  margin: 5rem;
   text-decoration: none;
-  padding: 4vw;
-  margin-left: 2rem;
+  color: inherit;
 
 }
 
-#pa {
-  top: 12rem;
-  margin-left: 5vw;
-}
+@media (max-width: 796px) {
+  h1 {
+    font-size: 50px;
+    white-space: nowrap;
+    margin-left: 10vw;
+    margin-top: 5vw;
+    margin-bottom: 0;
+  }
 
-#pc {
-  top: 20rem;
-  margin-left: 10vw;
-}
+  a {
+    position: relative;
+    margin: 0;
+    margin-left: 10vw;
+    font-size: 30px;
+    top: 15vw;
+    width: 8vw;
+  }
 
-#p1 {
-  top: 5rem;
-  margin-left: 30vw;
-}
+  .timestamp {
+    margin: 0;
+    font-size: 0rem;
+  }
 
-#p2 {
-  position: absolute;
-  top: 20vw;
-  margin-left: 50vw;
-}
-
-#p3 {
-  position: absolute;
-  top: 30rem;
-  margin-left: 70vw;
-
-}
-
-#p4 {
-  position: absolute;
-  top: 35rem;
-  margin-left: 25vw;
+  #sliders {
+    margin: 0;
+    position: relative;
+    font-size: 30px;
+    top: 5vw;
+    left: 0;
+    margin-left: 10vw;
+  }
 }

@@ -1,0 +1,214 @@
+*====================JAVASCRIPT=============================*
+
+-JS tells page how to behave
+
+-Javascript is what happens after out page loads. It lets us change our website based on conditions, a user's input, etc.
+
+-jQuery is *SHORTHAND* Javascript. Saves time by using short versions of common JavaScript functions.
+  -Compatible with Javascript. Mix and match 'vanilla JS with jQuery. Concepts like variables are same in either one.
+
+-Write it in JQuery and a library takes it/codes it.
+
+-Anything following dollar sign ($) is JQ function.
+-Document ready: waits for page to be loaded then runs the script in between the tags.
+
+- dot then command   .ready    .hover    (events)
+
+
+var greeting = 'bonjour';
+console.log('hello world');
+
+
+-var is variable   ---> word you are assigning values to.
+-string: '' data
+-integer: a number
+
+
+var greeting = 'bonjour';
+var x = 3;
+var y = 4;
+console.log(x * y);
+
+
+console.log(greeting + " to you!");
+
+
+$('h1').click(function(){
+  $('.world').toggle();
+});
+
+===toggle: shows and hides===
+
+$('h1').click(function(){
+  $('.world').toggleClass('show');
+  console.log('add .show on click!');
+});
+
+$(this) ---> relates back to the object
+
+console.log('click!');     ---> test if function is working
+
+
+var greeting = 'bonjour';
+var x = 3;
+var y = 4;
+console.log(x * y);
+
+// $('h1').click(function(){
+//   $('.world').css('display','block');
+// });
+//
+// $('h1').click(function(){
+//   $('.world').toggle();
+// });
+
+$('.world').click(function(){
+  $('.world').toggleClass('new');
+  console.log('add .show on click!');
+});
+
+
+entryCount = number of times you click the button
+displayCount = number of times something is on the screen.
+
+
+if (k =="a") {
+elem.before('span class="inner">)
+}
+
+
+
+
+*====================JAVASCRIPT DAY 2=============================*
+
+== means matches
+
+====
+---> count how many divs are on the page
+----------> example count the articles
+            all the odd numbers on one side, on the even side on the other.
+
+
+$(document).ready(function(){
+
+ // count the number of matched objects
+         var divCount =$('div').length;
+         console.log("count: " + divCount);
+
+
+ // count the number of matched objects
+         var divColor =
+         $('div').css('background-color');
+         console.log("color: " + divColor);
+
+
+// basic conditionals
+        if(divColor == "rgb(255, 0, 0)") {
+        console.log('div is red');
+        } else {
+        console.log('not red!');
+        }
+
+
+
+        var divHeight = $('div').css("height")
+        console.log('height: ' + divHeight);
+
+        if (divHeight > 200 ) {
+          //do something
+          console.log('div is big');
+        } else if (divHeight == 200) {
+          //do something else
+          console.log('div is just right');
+        } else {
+          //do the last thing
+          console.log('div is too small');
+        }
+
+
+
+----->  parseInt turns string into integer
+
+        var divHeight = parseInt($('div').css("height"),10);
+        console.log('height: ' + divHeight);
+
+        console.log('string or integer?' + divHeight * 3)
+
+
+
+// make a random value
+        var x = Math.random();           -----> only 0 through 1
+        console.log('x' + x);
+
+        var y = Math.floor(Math.random() *100); ---> multiply by whatever to get a larger number
+        console.log('y: ' + y);
+
+})
+
+
+// basic loops
+        $('div').each(function(index){
+          console.log(index + ": " + $(this).css("width"));
+        });
+
+---> index means counting starting at 0
+      1 + index begins starting counting at 1
+
+// without a loop
+        console.log("no loop: " + $('div').css("width"));
+
+---> goes to first one it finds then stops counting.
+
+
+
+// our image positioner app
+1. I need a button and an image
+2. When I click the button...
+
+      $('button').click(function(){
+
+3. Set a random value for the x coordinate
+
+      var x = Math.floor(Math.random() *100);
+      console.log('x' + x);
+
+4. Set a random value for the y coordinate
+
+      var y = Math.floor(Math.random() *100);
+      console.log('y: ' + y);
+
+5. add CSS to my image using new x/y coordinates
+
+      $('img').css('left', x + '%')
+      $('img').css('top', y + 'vh')
+
+
+      })
+
+
+
+END JAVASCRIPT
+
+    $('button').click(function(){
+        var x = Math.floor(Math.random() *100);
+        console.log('x' + x);
+        var y = Math.floor(Math.random() *100);
+        console.log('y: ' + y);
+        $('img').css('left', x + '%')
+        $('img').css('top', y + 'vh')
+    })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.

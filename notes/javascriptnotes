@@ -200,6 +200,37 @@ END JAVASCRIPT
 
 
 
+*====================JAVASCRIPT=============================*
+
+var newCat = "link";
+$('img').attr('src', newCat);
+
+========= ARRAYS ==========
+
+var items = ["one", "two", "three", 4, "banana"]
+var itemsCount = items.length;
+console.log("count: " + itemsCount);
+
+
+var item1 = items[4];             --------> calling out a certain item from the array
+console.log("item1: " + item1);
+
+
+var itemLast = items[items.length - 1]
+console.log('last: ' + itemLast);
+
+var itemRand = items[Math.floor(Math.random()*items.length)]
+console.log('rand: ' + itemRand);
+
+items.push('ferrari');
+console.log('items: ' + items);
+
+$('body').html(items);
+
+
+
+
+
 
 
 

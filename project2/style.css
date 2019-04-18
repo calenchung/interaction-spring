@@ -1,20 +1,41 @@
+* {
+  z-index: 0;
+}
+
 body {
   font-size: 72px;
   background-color: #ff0053;
   color: white;
+  margin: 5vw;
 }
+
+.cursor {
+  height: 12vw;
+}
+
+#cursor {
+  animation: blinker 1s step-end infinite;
+}
+@keyframes blinker {
+  50% { opacity: 0; }
+}
+
+#container {
+  line-height: 0vw;
+}
+
 
 
 .image-1{
   position: relative;
   left:0;
-  height: 12vw;
+  height: 10vw;
   z-index: 1;
 }
 
 .image-2{
   position: sticky;
-  height: 12vw;
+  height: 10vw;
   left: 0;
   right: 5vw;
   top: 0;
@@ -23,8 +44,8 @@ body {
 
 .image-3 {
   position: sticky;
-  height: 12vw;
-  right: -3vw;
+  height: 10vw;
+  right: -2vw;
   top: 0;
   z-index: 0;
   margin: 0;
@@ -38,7 +59,7 @@ body {
   padding: 20px;
   width: 10vw;
   min-width: 10vw;
-  max-width: 28vw;
+  max-width: 27vw;
   resize: horizontal;
   overflow: hidden;
   white-space: nowrap;
@@ -73,12 +94,22 @@ body {
   height: 40vw;
 }
 
+.pull-tab {
+  height: 0px;
+  width: 0px;
+  border-bottom: 2px solid white;
+  border-left: 2px solid white;
+  background-color: #ff0053;
+  padding: 5px;
+  -webkit-transform: rotate(270deg);
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  pointer-events: none;
+  z-index: 3;
+}
 
-@media (max-width: 700px) {
-  #container {
-    line-height: 13vw;
-  }
-
+@media (max-width: 1000px) {
   .a {
     float: left;
     position: relative;
@@ -87,6 +118,12 @@ body {
     max-width: 80vw;
     margin-bottom: 2vw;
   }
+
+  .pull-tab {
+    border-bottom: 5px solid white;
+    border-left: 5px solid white;
+  }
+
 
   .image-1{
     height: 40vw;

@@ -10,6 +10,10 @@ p {
   margin-top: .5rem;
 }
 
+.pop:hover {
+  color: grey;
+}
+
 body {
   font-family: helvetica;
   color: black;

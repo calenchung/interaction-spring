@@ -4,7 +4,10 @@
   box-sizing: border-box;
 }
 
-
+@font-face {
+font-family: "FavoritTrialPro";
+src: url("fonts/FavoritTrialPro-Regular.woff2");
+}
 
 Body {
   background: red;

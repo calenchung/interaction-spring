@@ -1,0 +1,108 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "America-Regular";
+  padding: 50px;
+  font-size: 15px;
+}
+
+@font-face {
+  src:url("GT-America-Trial-Medium.otf");
+  font-family: "America-Medium";
+}
+
+@font-face {
+  src:url("GT-America-Trial-Regular.otf");
+  font-family: "America-Regular";
+}
+
+h1 {
+  margin-top: 50px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  font-size: 40px;
+}
+
+h2 {
+  margin-top: 40px;
+	padding-bottom: 10px;
+}
+
+h3 {
+  font-size: 25px;
+  margin-top: 40px;
+	padding-bottom: 10px;
+  float: left;
+  width: 27%;
+}
+
+p {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-bottom: solid black 1px;
+}
+
+.starter {
+  border-top: solid black 1px;
+  margin-top: 25px;
+}
+
+.column {
+  float: left;
+  width: 17%;
+  padding: 0px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.collapsible {
+  color: black;
+  cursor: pointer;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 100%;
+  border: solid white 1px;
+  border-bottom: solid black 1px;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+/* ================================ */
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: none;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: none;
+}

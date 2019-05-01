@@ -26,6 +26,12 @@ h1 {
   font-size: 40px;
 }
 
+.names {
+  position: absolute;
+  margin: auto;
+  top: 650px;
+}
+
 .sidebar {
   position: fixed;
   right: 0;
@@ -36,8 +42,23 @@ h1 {
   height: 120vh;
 }
 
+.one {
+  position: relative;
+}
+
 .hand1 {
-  width: 20vw;
+  width: 600px;
+  top: 0px;
+  margin: auto;
+  position: absolute;
+}
+
+.main {
+  display: block;
+  width: 600px;
+  top: 0px;
+  position: absolute;
+  margin: auto;
 }
 
 
@@ -46,7 +67,7 @@ h1 {
 ul {
   font-family: "America-Regular";
   list-style-type: none;
-	right: 60px;
+	right: 50px;
 	top: 1%;
   position: fixed;
   font-size: 20px;
@@ -92,7 +113,7 @@ p {
 
 .column {
   float: left;
-  width: 23%;
+  width: 17%;
   padding: 0px;
 }
 
@@ -119,18 +140,27 @@ div {
 	z-index: -100;
  }
 
+ .plus {
+   z-index: 199;
+   position: fixed;
+   right: 5px; top: 10px;
+   width: 50px;
+ }
+
  #button {
    border: none;
    font-family: "America-Regular";
-   font-size: 50px;
+   font-size: 30px;
    background-color: rgb(0, 0, 0, 0);
    color: white;
+   stroke: solid 1px black;
    z-index: 200;
    position: fixed;
-   right: 10px; top: 0;
+   right: 21px; top: 13px;
  }
 
  #button:active {
+  transform: rotateX(90);
  outline: none;
  border: none;
  }
@@ -139,12 +169,13 @@ div {
 
 
  .box {
+   display: block;
    position: fixed;
    right: 0;
    top: 0px;
    border-left: solid black 1px;
    background-color: black;
-   width: 30px;
+   width: 60px;
    height: 100vh;
    z-index: 100;
    overflow: auto;
@@ -164,32 +195,30 @@ div {
   height: 100vh;
 }
 
-.main {
-  display: block;
-  margin: auto;
-  width: 40vw;
-  margin-right: 20vw;
-  position: absolute;
-}
 
 .hidden {
 	display: none;
-	width: 150px;
  }
 
  span:hover + .hidden {
 	display: block;
-	position: fixed;
-	margin-left: 60px;
-  margin-top: -90px;
+	position: absolute;
 	z-index: -100;
  }
 
+.side-hide {
+  display: none;
+}
+
+.box:hover .side-hide {
+ display: block;
+ z-index: 1000;
+}
 
 /* ================================ */
 
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 0px;
 }
 
 /* Track */
@@ -199,5 +228,10 @@ div {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: black;
+  background: none;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: none;
 }

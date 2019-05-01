@@ -5,5 +5,6 @@ Things needed for launching a website:
     domain
     hosting
     analytics  ---> google analytics
-    favicon + metadata  ---> facebook opengraph
+    favicon + metadata  ---> facebook opengraph search results
     security
+    readme

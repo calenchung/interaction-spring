@@ -15,4 +15,32 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
+
+
+$("#button").click(function() {
+  $('.transform').toggleClass('transform-active');
+});
+
+
+
+
+$('form').on('submit', function (event) {
+  event.preventDefault();
+  var fullName = $('#full-name').val();
+  $('#input-value').text(fullName);
+
+  if (fullName.length === 0) {
+      alert("fill out your name!");
+  }
+
+  var city = $('select').val();
+  $('#select-value').text(city);
+
+  if (city.length === 0) {
+      alert("Select a location!");
+  }
+
+});
+
+
 });

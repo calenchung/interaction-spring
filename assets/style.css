@@ -1,0 +1,131 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: FavoritTrial, 'Roboto', sans-serif;
+}
+
+@font-face {
+font-family: "FavoritTrial";
+src: url("../fonts/FavoritTrial-Regular.woff");
+}
+
+
+button {
+  font-size: 3rem;
+  margin-left: 1rem;
+  top: 0;
+}
+
+
+.timestamp {
+  font-family: FavoritTrial, 'Roboto', sans-serif;
+	font-weight: lighter;
+	font-style: normal;
+  font-size: 2rem;
+	position: sticky;
+	position: -webkit-sticky;
+  position: absolute;
+  margin: 5rem;
+  width: 5rem;
+  right: 0;
+  top: .5rem;
+}
+
+
+#sliders {
+  font-family: FavoritTrial;
+	font-weight: lighter;
+	font-style: normal;
+  font-size: 1.5rem;
+	position: sticky;
+	position: -webkit-sticky;
+  position: absolute;
+  width: 5rem;
+  top: 11.5rem;
+  right: 0;
+  margin: 5rem;
+}
+
+#red::-webkit-slider-thumb, #green::-webkit-slider-thumb, #blue::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: white;
+  border: solid 1.5px black;
+  cursor: pointer;
+}
+
+
+#red{
+  -webkit-appearance: none;
+  height: 6px;
+  background: red;
+  outline: none;
+}
+
+#green{
+  -webkit-appearance: none;
+  height: 6px;
+  outline: none;
+}
+
+#blue{
+  -webkit-appearance: none;
+  height: 6px;
+  outline: none;
+}
+
+
+h1{
+  font-family: FavoritTrial, 'Roboto', sans-serif;
+  font-size: 5rem;
+  margin: 5rem;
+  top: 0;
+  white-space: nowrap;
+}
+
+a {
+  font-size: 3rem;
+  margin: 5rem;
+  text-decoration: none;
+  color: inherit;
+
+}
+
+@media (max-width: 796px) {
+  h1 {
+    font-size: 50px;
+    white-space: nowrap;
+    margin-left: 10vw;
+    margin-top: 5vw;
+    margin-bottom: 0;
+  }
+
+  a {
+    position: relative;
+    margin: 0;
+    margin-left: 10vw;
+    font-size: 30px;
+    top: 15vw;
+    width: 8vw;
+  }
+
+  .timestamp {
+    margin: 0;
+    font-size: 0rem;
+  }
+
+  #sliders {
+    margin: 0;
+    position: relative;
+    font-size: 30px;
+    top: 5vw;
+    left: 0;
+    margin-left: 10vw;
+  }
+}

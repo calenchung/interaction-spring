@@ -32,7 +32,7 @@ button {
   margin: 5rem;
   width: 5rem;
   right: 0;
-  top: .5rem;
+  top: 0rem;
 }
 
 
@@ -80,22 +80,37 @@ button {
   outline: none;
 }
 
-
 h1{
   font-family: FavoritTrial, 'Roboto', sans-serif;
   font-size: 5rem;
-  margin: 5rem;
+  margin: 3rem;
   top: 0;
   white-space: nowrap;
 }
 
 a {
   font-size: 3rem;
-  margin: 5rem;
+  margin: 3rem;
   text-decoration: none;
   color: inherit;
-
 }
+
+a .tooltiptext {
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 3px;
+  position: absolute;
+  margin-left: 15px;
+  z-index: 1;
+}
+
+a:hover .tooltiptext {
+  visibility: visible;
+}
+
 
 @media (max-width: 796px) {
   h1 {

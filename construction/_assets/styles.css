@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+font-family: "FavoritTrialPro";
+src: url("fonts/FavoritTrialPro-Regular.woff2");
+}
+
+Body {
+  background: white;
+}
+
+
+p {
+  color: blue;
+  font-family: filson-pro;
+  font-weight: 400;
+  font-size: ;
+  line-height: 25px;
+  margin-top: 30px;
+  position: relative;
+}
+
+#fun{
+  color: blue;
+  margin-top: 50px;
+  font-size: 100px;
+  font-weight: 700;
+
+}

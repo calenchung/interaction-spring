@@ -119,3 +119,34 @@ body{
    from { background-position: 0 0; }
     to { background-position: 100% 0; }
   }
+
+
+
+/* ============================================================================= */
+/* ============================================================================= */
+
+  @media (max-width: 796px) {
+    .med {
+      display: none;
+    }
+
+  }
+
+
+/* PHONE */
+  @media (max-width: 414px) {
+    .med {
+      display: none;
+    }
+
+    .sm {
+      display: none;
+    }
+
+    .logo {
+      top: 6%;
+      width: 50vw;
+      left: 25%;
+    }
+
+  }

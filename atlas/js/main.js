@@ -12,6 +12,7 @@ function randomLocation(){
 
 let tiles = document.getElementsByClassName("box");
 let content = document.getElementsByClassName("cont");
+let title = document.getElementsByClassName("title");
 
 
 let randomLoc = randomLocation();
@@ -28,6 +29,10 @@ for (i = 0; i < tiles.length; i++) {
 
 for (i = 0; i < content.length; i++) {
   content[i].style.backgroundColor = "white";
+}
+
+for (i = 0; i < title.length; i++) {
+  title[i].style.backgroundColor = "white";
 }
 
 

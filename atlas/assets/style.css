@@ -18,6 +18,8 @@ body{
   /* border: solid red 2px; */
   background: none;
   background-color: white;
+  grid-column: 1;
+  grid-row: 1 / 3;
 }
 
 

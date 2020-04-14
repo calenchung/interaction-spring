@@ -7,8 +7,15 @@ body{
 
 a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
+
+p {
+  font-size: 23px;
+  font-weight: 400;
+  padding: 20px 40px 20px;
+}
+
 
 #grid {
   display: grid;
@@ -24,14 +31,6 @@ a {
   grid-column: 2 / 6;
   grid-row: 2 / 4;
 }
-
-p {
-  font-size: 23px;
-  font-weight: 400;
-  padding: 20px 40px 20px;
-}
-
-
 
 #grid::before {
   content: '';
@@ -62,9 +61,22 @@ p {
 }
 
 .title {
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+
+.title-inactive {
   color: white;
   font-size: 30px;
   text-align: center;
   padding-top: 80px;
   padding-bottom: 80px;
+}
+
+.title-inactive:hover {
+  border: solid red 2px;
 }

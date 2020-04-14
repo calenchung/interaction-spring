@@ -12,7 +12,9 @@ function randomLocation(){
 
 let tiles = document.getElementsByClassName("box");
 let content = document.getElementsByClassName("cont");
+let contentExtra = document.getElementsByClassName("contEx");
 let title = document.getElementsByClassName("title");
+// let titleInactive = document.getElementsByClassName("box title-inactive").onmouseover = function() {mouseOver()};;
 
 
 let randomLoc = randomLocation();
@@ -31,9 +33,25 @@ for (i = 0; i < content.length; i++) {
   content[i].style.backgroundColor = "white";
 }
 
+for (i = 0; i < contentExtra.length; i++) {
+  contentExtra[i].style.backgroundColor = "white";
+}
+
 for (i = 0; i < title.length; i++) {
   title[i].style.backgroundColor = "white";
 }
+
+// for (i = 0; i < titleInactive.length; i++) {
+//   function mouseOver() {
+//     titleInactive[i].style.backgroundColor = "white";
+//   }
+// }
+
+// document.getElementsByClassName("box title-inactive").onmouseover = function() {mouseOver()};;
+// function mouseOver() {
+//     document.getElementsByClassName("box title-inactive").style.backgroundColor = "white";
+//   }
+
 
 
 

@@ -177,4 +177,10 @@ p {
     grid-row: 2 / 4;
   }
 
+  .logo-pages {
+    width: 300px;
+    top: 0;
+    left: 4%;
+  }
+
 }

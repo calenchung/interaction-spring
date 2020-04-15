@@ -24,10 +24,10 @@ p {
 
 #grid {
   display: grid;
+  display: grid;
   grid-template-columns: repeat(auto-fill, minmax(12rem, 2fr));
-  grid-template-rows: repeat(auto-fill, minmax(12rem, 1fr));
-  width: 100vw;
-  height: 100vh;
+  grid-auto-rows: 2fr;
+
 }
 
 .cont {
@@ -46,7 +46,7 @@ p {
 }
 
 .cont-three {
-  grid-column: 4 / 7;
+  grid-column: 2 / 6;
   grid-row: 2 / 4;
 }
 
@@ -62,6 +62,7 @@ p {
   grid-row: 1 / 1;
   grid-column: 1 / 1;
 }
+
 
 #grid > * {
   background: rgba(0,0,0,0.1);
@@ -80,9 +81,16 @@ p {
 
 .logo {
   position: absolute;
-  width: 30vw;
-  top: 34%;
-  left: 34%;
+  width: 35vw;
+  top: 31%;
+  left: 30%;
+}
+
+.logo-pages {
+  position: absolute;
+  width: 400px;
+  top: 0;
+  left: 4%;
 }
 
 .title {
@@ -119,5 +127,30 @@ p {
   margin: 0 auto;
   width: 100%;
   height: auto;
-  border: solid red 2px;
+}
+
+
+/* ============================================================================= */
+/* ============================================================================= */
+
+
+@media (max-width: 970px) {
+
+  .b6, .b7, .b9, .b10, .b11 {
+    display: none;
+  }
+  /* .b7 {
+    display: none;
+  }
+  .b9 {
+    display: none;
+  } */
+
+
+  /* .logo {
+    top: 6%;
+    width: 50vw;
+    left: 25%;
+  } */
+
 }

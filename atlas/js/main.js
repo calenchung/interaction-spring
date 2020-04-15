@@ -1,7 +1,14 @@
 let locationIndex = 0;
 
 let locations = [
-{lat: 40.808029, lng: -73.963859}, {lat:35.659363, lng:139.700964}, {lat:40.7235499, lng:-73.9792336}, {lat: 40.7423643, lng: -73.9889526}, {lat: -8.0104812, lng: -34.8546019}, {lat: 37.3965581, lng: 126.6364439}, {lat: 37.3938247, lng: 126.6430511}, {lat: 52.5136312, lng: 13.4177136}, {lat:40.72976017315663,lng:-73.99156880081819},{lat:35.6595699,lng:139.7005703}
+  {lat:19.0230, lng:72.8230, zoom:15, name:"Mumbai"},
+  {lat:29.827, lng:90.319, zoom:6, name:"Himalaya"},
+  {lat: 29.9634, lng: -88.5235, zoom:10, name:"Mississipi River" },
+{lat: 40.7680007, lng: -73.9784481, zoom:17,name:"Central Park"},
+{lat: 40.7150767,lng: -74.002556, zoom:17, name:"Lower Manhattan"},
+{lat: 22.8782, lng: 21.2134, zoom:10, name:"Sahara Desert"},
+{lat: 39.2972725,lng: -106.721657, zoom:17, name:"Colorado"},
+{lat: 37.3965581, lng: 126.6364439, zoom:17, name:"?" },
 ];
 
 function randomLocation(){

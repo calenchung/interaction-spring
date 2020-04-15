@@ -27,7 +27,6 @@ p {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(12rem, 2fr));
   grid-auto-rows: 2fr;
-
 }
 
 .cont {
@@ -133,24 +132,49 @@ p {
 /* ============================================================================= */
 /* ============================================================================= */
 
-
-@media (max-width: 970px) {
+@media (max-width: 1343px) {
 
   .b6, .b7, .b9, .b10, .b11 {
     display: none;
   }
-  /* .b7 {
+
+}
+
+
+@media (max-width: 1152px) {
+
+  .b6, .b7, .b9, .b10, .b11 {
     display: none;
   }
-  .b9 {
+
+}
+
+@media (max-width: 1000px) {
+
+  .cont-three {
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+
+  #grid {
+    display: grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 2fr));
+    grid-auto-rows: 2fr;
+  }
+
+  .b3, .b4 .contEx, .b6, .b7, .b9, .b10, .b11, .b18 {
     display: none;
-  } */
+  }
 
-
-  /* .logo {
-    top: 6%;
-    width: 50vw;
-    left: 25%;
-  } */
+  .cont-three {
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
+  }
 
 }

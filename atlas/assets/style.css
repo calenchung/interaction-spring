@@ -76,6 +76,13 @@ p {
   border: solid red 2px;
 }
 
+.logo {
+  position: absolute;
+  width: 30vw;
+  top: 34%;
+  left: 34%;
+}
+
 .title {
   color: black;
   font-size: 30px;

@@ -44,7 +44,6 @@ for (i = 0; i < tiles.length; i++) {
 }
 
 
-
 for (i = 0; i < content.length; i++) {
   content[i].style.backgroundColor = "white";
 }

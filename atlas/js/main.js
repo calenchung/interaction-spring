@@ -14,6 +14,7 @@ let locations = [
 function randomLocation(){
   // var locationIndex = Math.floor(Math.random()*locations.length);
   let loc = locations[Math.floor(Math.random()*locations.length)];
+  // loc = locations[locationIndex];
   return loc;
 }
 
@@ -26,15 +27,23 @@ let title = document.getElementsByClassName("title");
 
 let randomLoc = randomLocation();
 
+
 let i;
 let urlStartString = "url('https://api.mapbox.com/styles/v1/mapbox/satellite-v9/static/";
-let urlEndString = ",17,0,0/1280x700?access_token=pk.eyJ1IjoicmVhZHlsZXRzZ28iLCJhIjoiY2s4ejBoZmtyMDBlbDNsbXh1ZzliMGo5YyJ9.hryfSaItVhTqHQ3V3TxbEg')";
+let urlEndString = ",0,0/1280x700?access_token=pk.eyJ1IjoicmVhZHlsZXRzZ28iLCJhIjoiY2s4ejBoZmtyMDBlbDNsbXh1ZzliMGo5YyJ9.hryfSaItVhTqHQ3V3TxbEg')";
 
+// let randomOffset = 0;
+let randomOffset = map(randomLoc["zoom"],17, 0, 0.001, 0.01 );
 // console.log(urlString);
 for (i = 0; i < tiles.length; i++) {
-  let urlString = urlStartString + (randomLoc["lng"]+(i*.001)) + ","+ (randomLoc["lat"]+(i*.001)) + urlEndString;
+
+  let urlString = urlStartString + (randomLoc["lng"]+(i*randomOffset)) + ","+ (randomLoc["lat"]+(i*randomOffset)) + ","+ randomLoc["zoom"] + urlEndString;
+  // let urlString = urlStartString + randomLoc["lng"] + ","+ randomLoc["lat"] + urlEndString;
   tiles[i].style.backgroundImage = urlString;
+  tiles[i].style.backgroundPosition = (Math.random()*1280) +"px " + (Math.random()*700) +"px"  ;
 }
+
+
 
 for (i = 0; i < content.length; i++) {
   content[i].style.backgroundColor = "white";

@@ -4,6 +4,8 @@ body{
   font-family: neue-haas-grotesk-display, sans-serif;
   background-color: white;
   overflow: hidden;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 a {
@@ -250,9 +252,6 @@ p {
     overflow-x: hidden;
   }
 
-  p {
-    font-size: 20px;
-  }
 
   #grid {
     grid-template-columns: repeat(auto-fill, minmax(10rem, 2fr));
@@ -261,7 +260,7 @@ p {
 
   .cont-one {
     grid-column: 1 / 3;
-    grid-row: 3 / 5;
+    grid-row: 3 / 8;
   }
 
   .logo-pages {

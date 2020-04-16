@@ -250,6 +250,10 @@ p {
     overflow-x: hidden;
   }
 
+  p {
+    font-size: 20px;
+  }
+
   #grid {
     grid-template-columns: repeat(auto-fill, minmax(10rem, 2fr));
     width: 100vw;

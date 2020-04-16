@@ -154,7 +154,7 @@ p {
   .cont-one {
     grid-column: 2 / 5;
     grid-row: 2 / 5;
-    overflow: scroll;
+    overflow-y: visible;
   }
 
   .b3, .b4, .b6, .b7, .b9, .b10, .b11 {
@@ -244,6 +244,11 @@ p {
 
 
 @media (max-width: 414px) {
+
+  body{
+    max-width: 100%;
+    overflow-x: hidden;
+  }
 
   #grid {
     grid-template-columns: repeat(auto-fill, minmax(10rem, 2fr));

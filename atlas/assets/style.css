@@ -11,7 +11,6 @@ body{
 a {
   text-decoration: none;
   color: white;
-  padding: 60px;
 }
 
 p {
@@ -83,7 +82,7 @@ p {
 .logo {
   position: absolute;
   width: 35vw;
-  top: 31%;
+  top: 40%;
   left: 30%;
 }
 
@@ -159,10 +158,17 @@ p {
     overflow-y: visible;
   }
 
+  .a3, .a4, .a6, .a7, .a9, .a10, .a11, .a12, .a13, .a14, .a15, .a16, .a17, .a18, .a19,
   .b3, .b4, .b6, .b7, .b9, .b10, .b11 {
     display: none;
   }
 
+
+    .logo {
+      width: 350px;
+      top: 11%;
+      left: 3%;
+    }
 
   .logo-pages {
     width: 350px;
@@ -192,8 +198,19 @@ p {
     grid-row: 2 / 4;
   }
 
+  .a19, .a18 {
+    display: block;
+  }
+
+  .a28, .a27, .a26,
   .b16, .b17, .b18, .b19, .b20, .b21, .b22, .b23, .b24, .b25, .b26, .b27, .b28 {
     display: none;
+  }
+
+  .logo {
+    width: 50vw;
+    top: 12%;
+    left: 8%;
   }
 
   .logo-pages {

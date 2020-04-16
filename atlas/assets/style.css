@@ -261,7 +261,7 @@ p {
 
   .cont-one {
     grid-column: 1 / 3;
-    grid-row: 3 / 8;
+    grid-row: 3 / 5;
   }
 
   .logo-pages {

@@ -56,6 +56,13 @@ for (i = 0; i < title.length; i++) {
   title[i].style.backgroundColor = "white";
 }
 
+
+function boxHover() {
+    for (i = 0; i < title.length; i++) {
+    title[i].style.backgroundColor = "white";
+  }
+}
+
 // for (i = 0; i < titleInactive.length; i++) {
 //   function mouseOver() {
 //     titleInactive[i].style.backgroundColor = "white";

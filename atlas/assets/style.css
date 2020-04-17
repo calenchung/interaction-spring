@@ -110,9 +110,9 @@ p {
   padding-bottom: 80px;
 }
 
-.title-inactive:hover {
+/* .title-inactive:hover {
   border: solid red 2px;
-}
+} */
 
 .pSub {
   color: grey;
@@ -243,7 +243,7 @@ p {
 
   .cont-three {
     grid-column: 1 / 3;
-    grid-row: 2 / 3;
+    grid-row: 2 / 4;
   }
 
   .b4, .b13 {
@@ -284,6 +284,7 @@ p {
     grid-column: 1 / 3;
     grid-row: 3 / 8;
   }
+
 
   .logo-pages {
     width: 80vw;

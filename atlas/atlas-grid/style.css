@@ -1,0 +1,60 @@
+body{
+  margin:0;
+  padding:0;
+  background-color: white;
+  overflow: hidden;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+div {
+  background-color: white;
+  border: solid red 2px;
+}
+
+#grid {
+  display: grid;
+  display: grid;
+  grid-template-columns: 14.3% 14.3% 14.3% 14.3% 14.3% 14.3% 14.3%;
+  grid-auto-rows: 2fr;
+  /* grid-template-columns: repeat(auto-fill, minmax(12rem, 2fr)); */
+  /* grid-auto-rows: 2fr; */
+}
+
+#grid::before {
+  content: '';
+  width: 0;
+  padding-bottom: 100%;
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
+}
+
+#grid > *:first-child {
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
+}
+
+
+#grid > * {
+  background: rgba(0,0,0,0.1);
+  background-position: 0px 0px;
+  animation: animatedBackground 40s linear infinite;
+}
+
+
+/* ============================================================================= */
+/* ============================================================================= */
+
+
+
+@media (max-width: 1140px) {
+  #grid {
+    grid-template-columns: 20% 20% 20% 20% 20%;
+  }
+}
+
+@media (max-width: 750px) {
+  #grid {
+    grid-template-columns: 50% 50%;
+  }
+}

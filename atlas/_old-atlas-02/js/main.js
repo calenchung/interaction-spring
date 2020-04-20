@@ -11,11 +11,6 @@ let locations = [
 {lat: 37.3965581, lng: 126.6364439, zoom:17, name:"?" },
 ];
 
-locations = [
-  {lat: 40.7150767,lng: -74.002556, zoom:17, name:"Lower Manhattan"},
-  {lat: 39.2972725,lng: -106.721657, zoom:17, name:"Colorado"}
-]
-
 function randomLocation(){
   // var locationIndex = Math.floor(Math.random()*locations.length);
   let loc = locations[Math.floor(Math.random()*locations.length)];
@@ -23,7 +18,7 @@ function randomLocation(){
   return loc;
 }
 
-let tiles = document.getElementById("grid").children;
+let tiles = document.getElementsByClassName("box");
 let content = document.getElementsByClassName("cont");
 let contentExtra = document.getElementsByClassName("contEx");
 let title = document.getElementsByClassName("title");
@@ -40,23 +35,12 @@ let urlEndString = ",0,0/1280x700?access_token=pk.eyJ1IjoicmVhZHlsZXRzZ28iLCJhIj
 // let randomOffset = 0;
 let randomOffset = map(randomLoc["zoom"],17, 0, 0.001, 0.01 );
 // console.log(urlString);
-let loc = locations[0];
 for (i = 0; i < tiles.length; i++) {
-  if (i % 2 == 0) {
-    loc = locations[0];
-  }else{
-    loc = locations[1];
-  }
 
-    // let urlString = urlStartString + (randomLoc["lng"]+(i*randomOffset)) + ","+ (randomLoc["lat"]+(i*randomOffset)) + ","+ i + urlEndString;
-  let urlString = urlStartString + (loc["lng"]+(i*randomOffset)) + ","+ (loc["lat"]+(i*randomOffset)) + ","+ loc["zoom"] + urlEndString;
-
-  // let urlString = urlStartString + (randomLoc["lng"]+(i*randomOffset)) + ","+ (randomLoc["lat"]+(i*randomOffset)) + ","+ i + urlEndString;
-
-  // let urlString = urlStartString + (randomLoc["lng"]+(i*randomOffset)) + ","+ (randomLoc["lat"]+(i*randomOffset)) + ","+ randomLoc["zoom"] + urlEndString;
+  let urlString = urlStartString + (randomLoc["lng"]+(i*randomOffset)) + ","+ (randomLoc["lat"]+(i*randomOffset)) + ","+ randomLoc["zoom"] + urlEndString;
   // let urlString = urlStartString + randomLoc["lng"] + ","+ randomLoc["lat"] + urlEndString;
   tiles[i].style.backgroundImage = urlString;
-  // tiles[i].style.backgroundPosition = (Math.random()*1280) +"px " + (Math.random()*700) +"px"  ;
+  tiles[i].style.backgroundPosition = (Math.random()*1280) +"px " + (Math.random()*700) +"px"  ;
 }
 
 
@@ -71,6 +55,26 @@ for (i = 0; i < contentExtra.length; i++) {
 for (i = 0; i < title.length; i++) {
   title[i].style.backgroundColor = "white";
 }
+
+
+function boxHover() {
+    for (i = 0; i < title.length; i++) {
+    title[i].style.backgroundColor = "white";
+  }
+}
+
+// for (i = 0; i < titleInactive.length; i++) {
+//   function mouseOver() {
+//     titleInactive[i].style.backgroundColor = "white";
+//   }
+// }
+
+// document.getElementsByClassName("box title-inactive").onmouseover = function() {mouseOver()};;
+// function mouseOver() {
+//     document.getElementsByClassName("box title-inactive").style.backgroundColor = "white";
+//   }
+
+
 
 
 /* ----------------------------------------------------------------------------------------
@@ -95,3 +99,19 @@ function PxToEm(input) {
     var emSize = parseFloat($("body").css("font-size"));
     return (Math.floor(input / emSize));
 }
+
+/*
+let mouseX = 0;
+let mouseY = 0;
+let map_img = document.getElementById("map_img");
+
+// Add the event listeners for mousedown, mousemove, and mouseup
+
+window.addEventListener('mousemove', e => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+    map_img.style.left = mouseX + "px";
+    map_img.style.top = mouseY + "px";
+    // console.log(mouseX);
+});
+*/

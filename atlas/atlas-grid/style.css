@@ -7,11 +7,6 @@ body{
   overflow-x: hidden;
 }
 
-div {
-  background-color: white;
-  border: solid red 2px;
-}
-
 #grid {
   display: grid;
   display: grid;
@@ -38,6 +33,13 @@ div {
   background-position: 0px 0px;
   animation: animatedBackground 40s linear infinite;
 }
+
+
+@keyframes animatedBackground {
+   from { background-position: 10% 100%; }
+    to { background-position: 100% 10%; }
+  }
+
 
 
 /* ============================================================================= */

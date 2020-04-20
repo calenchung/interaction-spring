@@ -27,3 +27,57 @@
 <div class="box"></div>
 <div class="box"></div>
 <div class="box"></div>
+
+
+
+<div id="grid">
+  <div class="a1"></div>
+  <div class="a2"></div>
+  <div class="a3"></div>
+  <div class="a4"></div>
+  <div class="title-inactive a5"><a href="pages/mission.html" class="page">Mission</a></div>
+  <div class="a6"></div>
+  <div class="a7"></div>
+  <div class="title-inactive a8 "><a href="pages/team.html" class="page">Team</a></div>
+  <div class="a9"></div>
+  <div class="a10"><div class="whiteLayer"></div></div>
+  <div class="a11"><div class="whiteLayer"></div></div>
+  <div class="a12"><div class="whiteLayer"></div></div>
+  <div class="a13"><div class="whiteLayer"></div></div>
+  <div class="a14"></div>
+  <div class="a15"></div>
+  <div class="a16"><div class="whiteLayer"></div></div>
+  <div class="a17"><div class="whiteLayer"></div></div>
+  <div class="a18"><div class="whiteLayer"></div></div>
+  <div class="a19"><div class="whiteLayer"></div></div>
+  <div class="a20"></div>
+  <div class="title-inactive a21"><a href="pages/contact.html" class="page">Contact</a></div>
+  <div class="a22"></div>
+  <div class="a30"></div>
+  <div class="a30"></div>
+  <div class="a30"></div>
+  <div class="a30"></div>
+  <div class="a30"></div>
+  <div class="a30"></div>
+  <div class="a30"></div>
+  <div class="a30"></div>
+  <div class="a30"></div>
+  <div class="a30"></div>
+  <div class="a30"></div>
+  <div class="a30"></div>
+  <div class="a30"></div>
+  <div class="a30"></div>
+  <div class="a30"></div>
+  <div class="a30"></div>
+  <div class="a30"></div>
+  <div class="a30"></div>
+  <div class="a30"></div>
+  <div class="a30"></div>
+  <div class="a30"></div>
+  <div class="a30"></div>
+  <div class="a30"></div>
+  <div class="a30"></div>
+  <div class="cont-one">
+    <p>ATLAS NYC is a laboratory for creative inquiry and invention. Our mission is to connect humans with each other through novel computer interfaces at the frontier of Mixed Reality, Haptics, Robotics. Driven by the essential human need to connect with each other, and the inadequacies of current interfaces like video chat, we invent interfaces that let people reach out and touch over a distance, feel the presence of each other in a room, and share ideas and emotions. A satellite lab of the ATLAS Institute at CU Boulder, we are a team of designers, engineers, and artists, based in the heart of New York City.</p>
+  </div>
+</div>

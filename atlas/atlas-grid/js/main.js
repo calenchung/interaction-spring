@@ -24,7 +24,7 @@ function randomLocation(){
 }
 
 let tiles = document.getElementById("grid").children;
-let content = document.getElementsByClassName("cont");
+let content = document.getElementsByClassName("");
 let contentExtra = document.getElementsByClassName("contEx");
 let title = document.getElementsByClassName("title");
 // let titleInactive = document.getElementsByClassName("box title-inactive").onmouseover = function() {mouseOver()};;
@@ -60,19 +60,6 @@ for (i = 0; i < tiles.length; i++) {
 }
 
 
-for (i = 0; i < content.length; i++) {
-  content[i].style.backgroundColor = "white";
-}
-
-for (i = 0; i < contentExtra.length; i++) {
-  contentExtra[i].style.backgroundColor = "white";
-}
-
-for (i = 0; i < title.length; i++) {
-  title[i].style.backgroundColor = "white";
-}
-
-
 /* ----------------------------------------------------------------------------------------
 Helper functions
 ------------------------------------------------------------------------------------------*/
@@ -95,3 +82,36 @@ function PxToEm(input) {
     var emSize = parseFloat($("body").css("font-size"));
     return (Math.floor(input / emSize));
 }
+
+
+function showMission() {
+  var elms = document.querySelectorAll("[id='whiteLayer']");
+  document.getElementById('contone').style.opacity='1';
+  document.getElementById('conttwo').style.opacity='0';
+  document.getElementById('contthree').style.opacity='0';
+
+  for(var i = 0; i < elms.length; i++)
+    elms[i].style.display='block';
+  }
+
+function showTeam() {
+  var elms = document.querySelectorAll("[id='whiteLayer']");
+  document.getElementById('contone').style.opacity='0';
+  document.getElementById('conttwo').style.opacity='1';
+  document.getElementById('contthree').style.opacity='0';
+
+  for(var i = 0; i < elms.length; i++)
+    elms[i].style.display='block';
+
+  }
+
+function showContact() {
+  var elms = document.querySelectorAll("[id='whiteLayer']");
+  document.getElementById('contone').style.opacity='0';
+  document.getElementById('conttwo').style.opacity='0';
+  document.getElementById('contthree').style.opacity='1';
+
+  for(var i = 0; i < elms.length; i++)
+    elms[i].style.display='block';
+
+  }

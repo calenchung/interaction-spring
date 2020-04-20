@@ -2,9 +2,37 @@ body{
   margin:0;
   padding:0;
   background-color: white;
+  font-family: neue-haas-grotesk-display, sans-serif;
   overflow: hidden;
   max-width: 100%;
-  overflow-x: hidden;
+}
+
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+p {
+  font-size: 25px;
+  font-weight: 400;
+  padding: 20px 40px 20px;
+  line-height: normal;
+  float: left;
+}
+
+
+.title {
+  color: black;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+.title-inactive {
+  color: white;
+  font-size: 30px;
+  text-align: center;
 }
 
 #grid {
@@ -51,10 +79,28 @@ body{
   #grid {
     grid-template-columns: 20% 20% 20% 20% 20%;
   }
+
+  .a3, .a4, .a6, .a7, .a9, .a10, .a11, .a12, .a13, .a14, .a15, .a16, .a17, .a18, .a19, .a20 {
+    display: none;
+  }
+
 }
 
 @media (max-width: 750px) {
+
+  body {
+    overflow: auto;
+  }
+
   #grid {
     grid-template-columns: 50% 50%;
+  }
+
+  .a30 {
+    display: none;
+  }
+
+  .a6, .a7 {
+    display: block;
   }
 }

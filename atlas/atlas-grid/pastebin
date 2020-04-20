@@ -28,6 +28,16 @@
 <div class="box"></div>
 <div class="box"></div>
 
+function showContact() {
+  var elms = document.querySelectorAll("[id='whiteLayer']");
+  document.getElementById('contone').style.opacity='0';
+  document.getElementById('conttwo').style.opacity='0';
+  document.getElementById('contthree').style.opacity='1';
+
+  for(var i = 0; i < elms.length; i++)
+    elms[i].style.display='block';
+
+  }
 
 
 <div id="grid">

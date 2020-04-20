@@ -85,33 +85,29 @@ function PxToEm(input) {
 
 
 function showMission() {
-  var elms = document.querySelectorAll("[id='whiteLayer']");
   document.getElementById('contone').style.opacity='1';
   document.getElementById('conttwo').style.opacity='0';
   document.getElementById('contthree').style.opacity='0';
-
-  for(var i = 0; i < elms.length; i++)
-    elms[i].style.display='block';
+  document.getElementById('logo-pages').style.display='block';
   }
 
 function showTeam() {
-  var elms = document.querySelectorAll("[id='whiteLayer']");
   document.getElementById('contone').style.opacity='0';
   document.getElementById('conttwo').style.opacity='1';
   document.getElementById('contthree').style.opacity='0';
-
-  for(var i = 0; i < elms.length; i++)
-    elms[i].style.display='block';
-
+  document.getElementById('logo-pages').style.display='block';
   }
 
 function showContact() {
-  var elms = document.querySelectorAll("[id='whiteLayer']");
   document.getElementById('contone').style.opacity='0';
   document.getElementById('conttwo').style.opacity='0';
   document.getElementById('contthree').style.opacity='1';
+  document.getElementById('logo-pages').style.display='block';
+}
 
-  for(var i = 0; i < elms.length; i++)
-    elms[i].style.display='block';
-
+function home() {
+  document.getElementById('contone').style.opacity='0';
+  document.getElementById('conttwo').style.opacity='0';
+  document.getElementById('contthree').style.opacity='0';
+  document.getElementById('logo-pages').style.display='none';
   }

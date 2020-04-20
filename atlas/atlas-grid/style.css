@@ -8,12 +8,6 @@ body{
 }
 
 
-a {
-  text-decoration: none;
-  color: white;
-  font-size: 1.9vw;
-}
-
 p {
   color: black;
   font-size: 1.9vw;
@@ -24,13 +18,14 @@ p {
 }
 
 .page {
+  font-family: neue-haas-grotesk-display, sans-serif;
   position: relative;
   top: 38%;
-  color: black;
+  color: white;
+  background-color: none;
 }
 
 .whiteLayerTitle {
-  background-color: white;
   height: 100%;
   width: 100%;
 }
@@ -46,11 +41,19 @@ p {
   text-align: center;
 }
 
-.logo {
+#logo-pages {
   position: absolute;
   width: 350px;
   top: 10%;
   left: 4%;
+  display: none;
+}
+
+#logo {
+  position: absolute;
+  width: 35vw;
+  top: 40%;
+  left: 30%;
 }
 
 button {
@@ -60,12 +63,14 @@ button {
   border: none;
   text-align: center;
   text-decoration: none;
+  background: none;
   }
 
 .content {
   grid-column: 2 / 6;
   grid-row: 2 / 4;
   z-index: 10;
+  background-color: white;
   opacity: 0;
 }
 
@@ -85,7 +90,6 @@ button {
   height: 100%;
   display: none;
 }
-
 
 
 /* ============================================================================= */
@@ -163,15 +167,26 @@ button {
     grid-template-columns: 20% 20% 20% 20% 20%;
   }
 
-  a {
-    font-size: 30px;
+  .content {
+    grid-column: 2 / 5;
+    grid-row: 2 / 4;
+    z-index: 10;
+    opacity: 0;
+  }
+
+  p{
+    font-size: 2vw;
+  }
+
+  button {
+    font-size: 2vw;
   }
 
   .a3, .a4, .a6, .a7, .a9, .a10, .a11, .a21, .a13, .a14, .a15, .a16, .a17, .a18, .a19, .a20 {
     display: none;
   }
 
-  .logo {
+  #logo {
     width: 30vw;
     top: 9%;
     left: 5%;
@@ -182,7 +197,11 @@ button {
 @media (max-width: 750px) {
 
   body {
-    overflow: hidden;
+    overflow: auto;
+  }
+
+  p {
+    font-size: 6vw;
   }
 
   #grid {
@@ -193,18 +212,22 @@ button {
     grid-template-columns: 50% 50%;
   }
 
-  .a30 {
+  .content {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    z-index: 10;
+    opacity: 0;
     display: none;
   }
 
-  .a5, .a6, .a7 {
-    display: block;
-  }
-
-  .logo {
+  #logo {
     width: 85vw;
     top: 12%;
     left: 8%;
+  }
+
+    .a2, .a3, .a4, .a6, .a7, .a9, .a10, .a11, .a21, .a13, .a14, .a15, .a16, .a17, .a18, .a19, .a20 {
+    display: none;
   }
 
 }

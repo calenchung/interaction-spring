@@ -21,6 +21,10 @@ p {
   float: left;
 }
 
+.page {
+  position: relative;
+  top: 38%;
+}
 
 .title {
   color: black;

@@ -155,7 +155,7 @@ left: -140%;
 
 p::-moz-selection {
   background: rgba(66, 255, 211, 1);
-  color: black;
+  color: white;
 }
 p::selection {
   background: rgba(66, 255, 211, 1);
@@ -172,10 +172,19 @@ h1::selection {
 }
 
 div::-moz-selection {
-  background: rgba(66, 255, 211, 1);
+  background: none;
   color: black;
 }
 div::selection {
-  background: rgba(66, 255, 211, 1);
+  background: none;
+  color: black;
+}
+
+img::-moz-selection {
+  background: none;
+  color: black;
+}
+img::selection {
+  background: none;
   color: black;
 }

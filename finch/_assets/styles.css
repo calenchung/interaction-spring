@@ -139,6 +139,7 @@ left: -140%;
 
 /* Track */
 ::-webkit-scrollbar-track {
+  background: none;
 }
 
 /* Handle */

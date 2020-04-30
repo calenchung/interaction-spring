@@ -1,0 +1,181 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+font-family: "Finch";
+src: url("fonts/Project_01-Regular.otf");
+}
+
+Body {
+  font-family: Finch;
+  font-weight: 400;
+  text-align: center;
+  color: black;
+  font-variant-ligatures: discretionary-ligatures;
+}
+
+h1 {
+  font-size: 23vw;
+  font-weight: 400;
+  margin-top: 20vh;
+}
+
+p {
+  font-size: 8vw;
+  font-size: 7.3vw;
+  line-height: 8.7vw;
+}
+
+.text {
+  top: 30vh;
+  padding: 5vw;
+  margin-top: 30px;
+  position: relative;
+}
+
+.title {
+  text-align: left;
+  font-size: 3vw;
+  top: 0;
+  padding-left: 10vw;
+}
+
+.grid {
+  left: 10%;
+  position: relative;
+  display: grid;
+  grid-template-columns: 11.12% 11.11% 11.11% 11.11% 11.11% 11.11% 11.11% 11.11% 11.11%;
+  grid-template-rows: 33.33% 33.33% 33.33%;
+  height: 30vw;
+  width: 80vw;
+}
+
+.grid2 {
+  left: 10%;
+  position: relative;
+  display: grid;
+  grid-template-columns: 11.12% 11.11% 11.11% 11.11% 11.11% 11.11% 11.11% 11.11% 11.11%;
+  grid-template-rows: 25% 25% 25% 25%;
+  height: 40vw;
+  width: 80vw;
+}
+
+.letter {
+  font-size: 7.5vw;
+  border-right: solid black .25px;
+  border-bottom: solid black .25px;
+}
+
+.left {
+  border-left: solid black .25px;
+}
+
+.top {
+  border-top: solid black .25px;
+}
+
+.uppercase{
+  margin-top: 60vh;
+}
+
+.lowercase {
+  margin-top: 10vw;
+}
+
+.lowercase2 {
+  margin-top: 20vw;
+}
+
+.zoom {
+	display: none;
+	width: 35vw;
+  z-index: 1000;
+}
+
+
+span:hover + .zoom {
+display: block;
+position: relative;
+z-index: 1000;
+top: -200%;
+left: -140%;
+}
+
+
+
+#bird {
+  position: fixed;
+  right: -5vw;
+  top: -6vw;
+  width: 40vw;
+}
+
+
+#branch2 {
+  position: fixed;
+  left: -20vw;
+  top: 35vw;
+  width: 60vw;
+  transform: scaleX(-1);
+}
+
+#branch {
+  position: fixed;
+  left: -40vw;
+  top: -5vw;
+  width: 80vw;
+}
+
+/* ========================================================= */
+
+.text:focus {outline:none;}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(66, 255, 211, 1);
+}
+
+/* ------------------ */
+
+p::-moz-selection {
+  background: rgba(66, 255, 211, 1);
+  color: black;
+}
+p::selection {
+  background: rgba(66, 255, 211, 1);
+  color: black;
+}
+
+h1::-moz-selection {
+  background: rgba(66, 255, 211, 1);
+  color: black;
+}
+h1::selection {
+  background: rgba(66, 255, 211, 1);
+  color: black;
+}
+
+div::-moz-selection {
+  background: rgba(66, 255, 211, 1);
+  color: black;
+}
+div::selection {
+  background: rgba(66, 255, 211, 1);
+  color: black;
+}

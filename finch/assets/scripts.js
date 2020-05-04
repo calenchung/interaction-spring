@@ -48,9 +48,9 @@ function myFunction(){
  var element3 = document.getElementById("branch2");
  var desiredPosition = 500;
  if(window.pageYOffset >= desiredPosition){
-     element.style += "position: fixed; right: -20vw; top: -6vw;";
-     element2.style += "position: fixed; left: -50vw; top: -5vw; width: 80vw";
-     element3.style += "position: fixed; left: -40vw; top: 35vw; width: 60vw;";
+     element.style += "position: fixed; right: -25vw; top: -6vw;";
+     element2.style += "position: fixed; left: -55vw; top: -5vw; width: 80vw";
+     element3.style += "position: fixed; left: -45vw; top: 35vw; width: 60vw;";
    }
  else {
     element.style += "position: fixed; right: -5vw; top: -6vw;";

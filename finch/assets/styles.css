@@ -6,7 +6,7 @@
 
 @font-face {
 font-family: "Finch";
-src: url("fonts/Project_01-Regular.otf");
+src: url("fonts/Finch-Regular.otf");
 }
 
 Body {
@@ -34,6 +34,14 @@ p {
   padding: 5vw;
   margin-top: 30px;
   position: relative;
+}
+.text2 {
+  font-size: 15vw;
+  top: 50vh;
+  padding: 7vw;
+  margin-top: 30px;
+  position: relative;
+  line-height: 15vw;
 }
 
 .title {
@@ -78,12 +86,17 @@ p {
 }
 
 .uppercase{
-  margin-top: 60vh;
+  padding-top: 30vh;
 }
 
 .lowercase {
   margin-top: 10vw;
 }
+
+.lowercase1 {
+  margin-top: 30vw;
+}
+
 
 .lowercase2 {
   margin-top: 20vw;
@@ -127,6 +140,30 @@ left: -140%;
   left: -40vw;
   top: -5vw;
   width: 80vw;
+}
+
+.section2 {
+  position: relative;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 33.33% 33.33% 33.33%;
+  height: 180vw;
+  width: 100vw;
+  margin-top: 80vh;
+  z-index: -100;
+  align-items: center;
+}
+
+.vid {
+  left: 10vw;
+  width: 90%;
+}
+
+.vtext {
+  width: 100%;
+  font-size: 5vw;
+  align-self: center;
+  text-align: left;
 }
 
 /* ========================================================= */

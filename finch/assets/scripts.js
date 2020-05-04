@@ -50,7 +50,7 @@ function myFunction(){
  if(window.pageYOffset >= desiredPosition){
      element.style += "position: fixed; right: -25vw; top: -6vw;";
      element2.style += "position: fixed; left: -55vw; top: -5vw; width: 80vw";
-     element3.style += "position: fixed; left: -45vw; top: 35vw; width: 60vw;";
+     element3.style += "position: fixed; left: -37vw; top: 35vw; width: 60vw;";
    }
  else {
     element.style += "position: fixed; right: -5vw; top: -6vw;";

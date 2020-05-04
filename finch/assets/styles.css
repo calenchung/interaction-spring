@@ -2,7 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
+
 
 @font-face {
 font-family: "Finch";
@@ -69,6 +71,7 @@ p {
   grid-template-rows: 25% 25% 25% 25%;
   height: 40vw;
   width: 80vw;
+  overflow: hidden;
 }
 
 .letter {
@@ -94,12 +97,12 @@ p {
 }
 
 .lowercase1 {
-  margin-top: 30vw;
+  margin-top: 10vw;
 }
 
 
 .lowercase2 {
-  margin-top: 20vw;
+  margin-top: 10vw;
 }
 
 .zoom {

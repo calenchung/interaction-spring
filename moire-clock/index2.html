@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Smoothing</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script type="text/javascript" src="assets/paper-full.js"></script>
+    <script type="text/paperscript" canvas="canvas">
+
+  // var rectangle = new Rectangle(new Point(0, 0), view.bounds.size);
+  // var bg = new Path.Rectangle(rectangle);
+
+  var circleO = new Path.Circle(view.center, 50);
+  circleO.fillColor = 'skyblue'
+
+  var circleT = new Path.Rectangle(view.center + 50, 300, 10);
+  circleT.fillColor = {
+      gradient: {
+          stops: [['#00ff00', 0], ['skyblue', 0]],
+      },
+      origin: circleT.position,
+      destination: circleT.bounds.rightCenter
+  };
+
+  circleT.rotate(15)
+
+
+  var circleM = new Path.Rectangle(view.center + 50, 300, 10);
+  circleM.fillColor = {
+      gradient: {
+          stops: [['#00ff00', 0], ['skyblue', 0]],
+      },
+      origin: circleM.position,
+      destination: circleM.bounds.rightCenter
+  };
+
+  circleM.rotate(15)
+
+  circleT.insertBelow(circleO);
+
+  var rotationSpeed = 1;
+
+  date = new Date();
+  seconds = date.getSeconds()
+  circleT.rotate(seconds);
+
+
+  setInterval(function() {
+      //update date variables
+      date = new Date();
+      seconds = date.getSeconds()
+      // minutes = date.getMinutes()
+
+      circleT.rotate(6);
+
+      //call if seconds reset (1 minute)
+      if(seconds == 0){
+          circleM.rotate(6);
+      }
+
+  }, 1000)
+
+
+
+    </script>
+</head>
+<body>
+    <canvas id="canvas" resize></canvas>
+</body>
+</html>
